@@ -1,9 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. We can type "set args" command to specify the arguments to be used the next time your program is run.
+2. We can set breakpoints with the "break" command (See the docs in detail).
+3. We can simply type "n" then press Enter.
+4. We can step in to a function by type "next.step".
+5. We can continue the program after stopping by type "continue".
+6. We can print the value of a variable or expression through "print" command (along with optional args).
+7. We can display the value of a variable after every step by using "display" command.
+8. We can show a list of all vars and their values in the current function by using "info locals", which actually enable us to see the info about a frame. 
+9. We quit gdb with command "quit".
