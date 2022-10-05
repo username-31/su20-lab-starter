@@ -4,9 +4,11 @@
 #include <string.h>
 #include "lfsr.h"
 
-int main() {
-    int8_t *numbers = (int8_t*) malloc(sizeof(int8_t) * 65535);
-    if (numbers == NULL) {
+int main()
+{
+    int8_t *numbers = (int8_t *)malloc(sizeof(int8_t) * 65535);
+    if (numbers == NULL)
+    {
         printf("Memory allocation failed!");
         exit(1);
     }
@@ -16,12 +18,16 @@ int main() {
     uint32_t count = 0;
     int i;
 
-    do {
+    do
+    {
         count++;
         numbers[reg] = 1;
-        if (count < 24) {
+        if (count < 24)
+        {
             printf("My number is: %u\n", reg);
-        } else if (count == 24) {
+        }
+        else if (count == 24)
+        {
             printf(" ... etc etc ... \n");
         }
         for (i = 0; i < 32; i++)
@@ -30,9 +36,12 @@ int main() {
 
     printf("Got %u numbers before cycling!\n", count);
 
-    if (count == 65535) {
+    if (count == 65535)
+    {
         printf("Congratulations! It works!\n");
-    } else {
+    }
+    else
+    {
         printf("Did I miss something?\n");
     }
 

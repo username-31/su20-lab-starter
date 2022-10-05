@@ -1,7 +1,7 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. The "clean" target removes Makefile.bak, *.dsYM, and anything included in $(BINARIES)
+2. BINARIES
+3. gcc
+4. c99
+5. $(FOO)
+6. DarwinOS
+7. lin40, .c.o
