@@ -77,7 +77,10 @@ main:
 # Think: why might having a1 be useful?
 f:
     # YOUR CODE GOES HERE!
-
+    addi t0, a0, 3 # {a0 | -3, -2, ..., 3} -> {t0 | 0, 1, ..., 6} 
+    slli t0, t0, 2 # t0 is the offset
+    add t1, a1, t0 # t1 is the addr of f(x)
+    lw a0, 0(t1) # a0 = f(x)
     jr ra               # Always remember to jr ra after your function!
 
 print_int:
